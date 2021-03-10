@@ -55,21 +55,17 @@ public class MoverCaja : MonoBehaviour
 
         if (Input.GetKey(KeyCode.JoystickButton4))
         {
-            other.gameObject.tag == "Cesta" = true;
-            if (other.gameObject.tag == "Cesta")
-            {
+                Cesta.myMesh.enabled = true;
 
-                //Desactivamos el render y cambiamos la booleana de vivo a false para que se pare la nave.
-                myMesh.enabled = false;
-
-            }
+            
         }
-        
+
         //Quiero hacer que si se actia el botón, la cesta aparezca, por lo tanto true. Y luego que cuando eso ocurra que su mesh sea true y viceversa con el otro botón.
-       
+
         if (Input.GetKey(KeyCode.JoystickButton5))
         {
-  
+            Cesta.myMesh.enabled = false;
+
         }
 
     }

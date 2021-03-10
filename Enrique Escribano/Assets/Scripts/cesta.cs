@@ -5,7 +5,7 @@ using UnityEngine;
 public class cesta : MonoBehaviour
 {
 
-    [SerializeField] MeshRenderer myMesh;
+    public MeshRenderer myMesh;
 
 
 
@@ -20,3 +20,4 @@ public class cesta : MonoBehaviour
     {
         myMesh.enabled = false;
     }
+}
