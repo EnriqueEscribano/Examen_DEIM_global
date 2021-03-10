@@ -36,8 +36,9 @@ public class PrefabGenerator : MonoBehaviour
     void CrearHuevo()
     {
         //Creo un nuevo vector3, para ello primero creo un número random, que es un número aleatorio entre los valores que le asigno, en este caso el 0 y el 10.
-        float posRandom = Random.Range(0f, 10f);
-        Vector3 DestPos = new Vector3(posRandom, 0, 0);
+        float posRandom1 = Random.Range(0f, 100f);
+        float posRandom2 = Random.Range(0f, 100f);
+        Vector3 DestPos = new Vector3(posRandom1, 0, posRandom2);
         Vector3 NewPos = InitPos.position + DestPos;
         //Instancio el prefab en la posición del objeto de referencia. Como tenemos su componente Transform, le indicamos que lo que quiero es su posición.
         Instantiate(MyEgg, NewPos, Quaternion.identity);
