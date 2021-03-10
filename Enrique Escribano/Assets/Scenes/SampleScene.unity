@@ -830,10 +830,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1257930563}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1257930565
@@ -1032,7 +1032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18097e6dc88ef2945a80eddb4a0cf366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myMesh: {fileID: 0}
+  myMesh: {fileID: 1733493243}
 --- !u!54 &1626450480
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1135,7 +1135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2b4f021f75ab694b82f56546e76df6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myMesh: {fileID: 0}
+  myMesh: {fileID: 1733493243}
 --- !u!1 &1936815860
 GameObject:
   m_ObjectHideFlags: 0
