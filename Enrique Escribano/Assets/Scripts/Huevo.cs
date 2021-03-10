@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Huevo : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    [SerializeField] MeshRenderer myMesh;
+
+
+    void OnTriggerEnter(Collider other)            //Other se refiere para cualquier otro objeto, en este caso el plano
+
     {
-        
+        if (other.gameObject.tag == "Finish")
+        {
+            Destroy(this.gameObject);          //This se refiere a la clase en la que estamos, en este caso NaveCollider
+
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
