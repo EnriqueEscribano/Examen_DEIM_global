@@ -64,9 +64,13 @@ public class MoverCaja : MonoBehaviour
 
             }
         }
+        //Necesito que primero se active la cesta.
+       
         if (Input.GetKey(KeyCode.JoystickButton5))
-{
+        {
   
-}
+        }
 
+    }
+    
 }
