@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LookAt : MonoBehaviour
+    
 {
+    [SerializeField] Transform caja;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,6 @@ public class LookAt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.LookAt(caja);
     }
 }
