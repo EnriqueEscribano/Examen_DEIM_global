@@ -30,7 +30,7 @@ public class MoverCaja : MonoBehaviour
         float desplZ = Input.GetAxis("Vertical");
 
         //Restringir movimiento horizontal
-        if ((PosX < 100 || desplX < 0) && (PosX > 100 || desplX > 0))
+        if ((PosX < 120 || desplX < 0) && (PosX > -120 || desplX > 0))
         {
             transform.Translate(Vector3.right * Time.deltaTime * speed * desplX);
         }
