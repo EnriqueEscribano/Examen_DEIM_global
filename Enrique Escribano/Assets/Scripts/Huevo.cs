@@ -19,3 +19,4 @@ public class Huevo : MonoBehaviour
     }
 
 }
+//En principio los huevos tendrían que bajar puesto que tienen activado el use gravity.
