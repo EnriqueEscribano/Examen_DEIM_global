@@ -55,7 +55,7 @@ public class MoverCaja : MonoBehaviour
 
         if (Input.GetKey(KeyCode.JoystickButton4))
         {
-            other.Cesta.tag == "Cesta" = true;
+            other.gameObject.tag == "Cesta" = true;
             if (other.gameObject.tag == "Cesta")
             {
 
@@ -64,7 +64,8 @@ public class MoverCaja : MonoBehaviour
 
             }
         }
-        //Necesito que primero se active la cesta.
+        
+        //Quiero hacer que si se actia el botón, la cesta aparezca, por lo tanto true. Y luego que cuando eso ocurra que su mesh sea true y viceversa con el otro botón.
        
         if (Input.GetKey(KeyCode.JoystickButton5))
         {
