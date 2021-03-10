@@ -24,6 +24,7 @@ public class MoverCaja : MonoBehaviour
     void Update()
     {
         MoverNave();
+        PulsarBotón();
 
     }
 
@@ -48,29 +49,24 @@ public class MoverCaja : MonoBehaviour
         }
 
         // las || significan or.
-
-        //Pulsar botón para que aparezca la cesta
-
+    }
+    void PulsarBotón()  //Pulsar botón para que aparezca la cesta
+    {
 
         if (Input.GetKey(KeyCode.JoystickButton4))
         {
             other.Cesta.tag == "Cesta" = true;
-            transform.Translate(Vector3.up * Time.deltaTime * speed);
-        }
-        if (Input.GetKey(KeyCode.JoystickButton5))
-        {
-            transform.Translate(Vector3.down * Time.deltaTime * speed);
-        }
-        //script de collision pero no me funciona o me funciona mal
-        private void OnTriggerEnter(Collider other)
-        {
-            if (other.gameObject.tag == "Plane")
+            if (other.gameObject.tag == "Cesta")
             {
-                print("GAME OVER");
+
                 //Desactivamos el render y cambiamos la booleana de vivo a false para que se pare la nave.
-                myMeshRender.enabled = false;
-                alive = false;
+                myMesh.enabled = false;
+
             }
         }
-    }
+        if (Input.GetKey(KeyCode.JoystickButton5))
+{
+  
+}
+
 }
