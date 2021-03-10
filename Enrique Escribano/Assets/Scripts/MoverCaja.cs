@@ -42,9 +42,17 @@ public class MoverCaja : MonoBehaviour
             transform.Translate(Vector3.forward * Time.deltaTime * speed * desplZ);
         }
 
-        
-        
-        
         // las || significan or.
+
+        //Pulsar botón para que aparezca la cesta
+        if (Input.GetKey(KeyCode.JoystickButton4))
+        {
+            transform.Translate(Vector3.up * Time.deltaTime * speed);
+        }
+        if (Input.GetKey(KeyCode.JoystickButton5))
+        {
+            transform.Translate(Vector3.down * Time.deltaTime * speed);
+        }
+
     }
 }
