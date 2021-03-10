@@ -37,7 +37,7 @@ public class MoverCaja : MonoBehaviour
 
         //Restringir movimiento eje Z
        
-        if ((PosZ < 100 || desplZ < 0) && (PosZ > 100 || desplZ > 0))
+        if ((PosZ < 160 || desplZ < 0) && (PosZ > -160 || desplZ > 0))
         {
             transform.Translate(Vector3.forward * Time.deltaTime * speed * desplZ);
         }
