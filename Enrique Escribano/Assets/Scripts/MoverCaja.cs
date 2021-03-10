@@ -9,7 +9,7 @@ public class MoverCaja : MonoBehaviour
     private string currentTime;
     private float speed = 100f;
     
-    [SerializeField] GameObject Cesta;
+     cesta Cesta;
     [SerializeField] MeshRenderer myMesh;
 
 
